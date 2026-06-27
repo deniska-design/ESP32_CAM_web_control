@@ -6,11 +6,11 @@ An open-source project featuring a mobile robot car built around the **ESP32-CAM
 
 Features:
 
-Parallel Operation (Asynchronous Handling):** Thanks to the underlying FreeRTOS and dual-port server design architecture, you can view the live MJPEG video stream (on port 81) and send driving commands (on port 80) at the same exact time without any UI freezing.
-Real-time Video Streaming:** Live low-latency video feed directly from the OV2640 camera module to your browser.
-Modern Web UI:** A clean interface featuring intuitive, colorful rectangular touch/click control buttons.
-Onboard Flashlight Control:** Toggle the built-in bright LED directly from the web interface for night driving.
-Modular Code Structure:** Uses a custom `Car_motors` C++ class to cleanly separate low-level motor driver logic from the network protocol.
+Parallel Operation (Asynchronous Handling):** Thanks to the underlying FreeRTOS and dual-port server design architecture, you can view the live MJPEG video stream and send driving commands at the same exact time.
+Real-time Video Streaming: Live low-latency video feed directly from the OV2640 camera module to your browser.
+Modern Web UI: A clean interface featuring intuitive, colorful rectangular click control buttons.
+Onboard Flashlight Control: Toggle the built-in bright LED directly from the web interface for night driving.
+Modular Code Structure: Uses a custom `Car_motors` C++ class to cleanly separate low-level motor driver logic from the network protocol.
 
 ---
 
@@ -57,7 +57,7 @@ Make sure to enable PSRAM in the IDE settings.
 
 Hit Upload.
 
-4. Run and Control
+5. Run and Control
 Once uploaded, disconnect the programming pins and power up the car.
 
 Open the Serial Monitor at 115200 baud rate to see the initialization logs.
@@ -68,8 +68,13 @@ Enter this IP address into any web browser on a device connected to the same net
 
 Control your robot using the on-screen UI buttons or check out the camera feed!
 
-🖼️ Media & UI Showcase
-<img width="1677" height="901" alt="image" src="https://github.com/user-attachments/assets/ead74e26-ddf7-4740-8d25-707fa26afb6a" />
+---
 
-📜 License
+Execution:
+
+https://github.com/user-attachments/assets/9668f4eb-28dd-4800-ba90-a4b1d604a477
+
+---
+
+License:
 This project is open-source. Anyone is completely free to download, modify, use, and distribute this software for personal or educational purposes.
