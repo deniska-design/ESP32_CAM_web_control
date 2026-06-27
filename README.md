@@ -42,7 +42,7 @@ const char *ssid = "YOUR_WIFI_NAME";
 const char *password = "YOUR_WIFI_PASSWORD";
 ```
 
-5. Choose the right board
+3. Choose the right board
 
 ```
 Tools -> board -> esp32 -> AI thinker ESP32-CAM
