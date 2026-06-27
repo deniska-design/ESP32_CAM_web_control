@@ -42,7 +42,13 @@ const char *ssid = "YOUR_WIFI_NAME";
 const char *password = "YOUR_WIFI_PASSWORD";
 ```
 
-3. Upload the Code
+5. Choose the right board
+
+```
+Tools -> board -> esp32 -> AI thinker ESP32-CAM
+```
+
+4. Upload the Code
 Connect your ESP32-CAM board to your PC using an FTDI adapter or a dedicated USB-to-Serial shield.
 
 Select ESP32 Wrover Module (or your specific ESP32-CAM board) in the Arduino IDE boards manager.
