@@ -32,6 +32,8 @@ Installation & Setup:
 Open your terminal or command prompt and run:
 ```
 git clone https://github.com/deniska-design/ESP32_CAM_web_control.git
+```
+```
 cd ESP32_CAM_web_control
 ```
 2. Configure Wi-Fi Credentials
