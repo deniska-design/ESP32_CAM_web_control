@@ -1,4 +1,4 @@
-# ESP32-CAM Wi-Fi Controlled Robot Car
+ESP32-CAM Wi-Fi Controlled Robot Car
 
 An open-source project featuring a mobile robot car built around the **ESP32-CAM** board. The robot can be driven remotely via an interactive web interface that streams real-time live video and handles movement commands simultaneously.
 
@@ -6,18 +6,17 @@ An open-source project featuring a mobile robot car built around the **ESP32-CAM
 
 Features:
 
-Parallel Operation (Asynchronous Handling):** Thanks to the underlying FreeRTOS and dual-port server design architecture, you can view the live MJPEG video stream and send driving commands at the same exact time.
-Real-time Video Streaming: Live low-latency video feed directly from the OV2640 camera module to your browser.
-Modern Web UI: A clean interface featuring intuitive, colorful rectangular click control buttons.
-Onboard Flashlight Control: Toggle the built-in bright LED directly from the web interface for night driving.
-Modular Code Structure: Uses a custom `Car_motors` C++ class to cleanly separate low-level motor driver logic from the network protocol.
-
+* **Parallel Operation (Asynchronous Handling):** Thanks to the underlying FreeRTOS and dual-port server design architecture, you can view the live MJPEG video stream (on port 81) and send driving commands (on port 80) at the same exact time without any UI freezing.
+* **Real-time Video Streaming:** Live low-latency video feed directly from the OV2640 camera module to your browser.
+* **Modern Web UI:** A clean interface featuring intuitive, colorful rectangular touch/click control buttons.
+* **Onboard Flashlight Control:** Toggle the built-in bright LED directly from the web interface for night driving.
+* **Modular Code Structure:** Uses a custom `Car_motors` C++ class to cleanly separate low-level motor driver logic from the network protocol.
 ---
 
 Hardware Pinout Configuration:
 
-Based on the default configuration in `sketch_jun9a.ino`:
-
+| Component / Function | ESP32-CAM Pin |
+| :--- | :--- |
 | **Right Motor (-)** | GPIO 12 |
 | **Right Motor (+)** | GPIO 13 |
 | **Left Motor (-)** | GPIO 14 |
